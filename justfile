@@ -8,6 +8,10 @@ update:
 	just _check_dot_env
 	docker compose up --pull always
 
+# update gravity database
+updateGravity:
+	docker exec pihole pihole updateGravity
+
 # stop service
 stop:
 	docker compose stop

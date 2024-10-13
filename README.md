@@ -23,6 +23,12 @@ To stop:
 just stop
 ```
 
+## Update Gravity DB
+
+```
+just updateGravity
+```
+
 ## Pull newer Pi-hole image
 
 Note that we want to use a specific non-latest image tag to provide stability.
