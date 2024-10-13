@@ -1,6 +1,6 @@
-# Pi-hole config
+# Pi-hole Docker Config
 
-Configuration for my https://pi-hole.net/ instance.
+Configuration for my https://pi-hole.net/ instance running in Docker on RPi 3B+.
 
 ## Requirements
 
