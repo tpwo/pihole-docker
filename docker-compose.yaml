@@ -7,9 +7,9 @@ services:
       - '53:53/udp'
       - '80:80/tcp'
     environment:
-      WEBPASSWORD: admin
+      WEBPASSWORD: ${ADMIN_PASSWORD}
       PIHOLE_DNS: 1.1.1.1;1.0.0.1
-      FTLCONF_LOCAL_IPV4: 192.168.220.20
+      FTLCONF_LOCAL_IPV4: ${IPV4_HOST_ADDRESS}
       # Set "Listen on all interfaces, permit all origins"
       DNSMASQ_LISTENING: all
     volumes:
