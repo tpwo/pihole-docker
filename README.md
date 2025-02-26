@@ -7,25 +7,34 @@ Configuration for my https://pi-hole.net/ instance running in Docker on RPi 3B+.
 * Docker with compose
 * [just](https://github.com/casey/just) command runner
 
-## Running
+## Initial setup
 
-Initial setup:
+Clone repo and enter the folder:
 
 ```
 git clone https://github.com/tpwo/pihole-config
 cd pihole-config
-
-cp .env{.sample,}
-# edit .env by providing your values for:
-# - ADMIN_PASSWORD -> choose a secure password
-# - IPV4_HOST_ADDRESS -> provide IP address of the host machine
-#                        (usually 192.168.X.X)
-
-# (optional step)
-cp hosts{.sample,}
-# edit hosts file by providing IP Addresses of devices in your network. This
-way, pihole will display their names instead of IP Addresses in the web UI.
 ```
+
+Create `.env` file by providing your values for:
+- `ADMIN_PASSWORD` -> choose a secure password
+- `IPV4_HOST_ADDRESS` -> provide IP address of the host machine (usually `192.168.X.X`)
+
+You can copy the sample file and edit it:
+
+```
+cp .env{.sample,}
+```
+
+Create `hosts` file and (optionally) fill in the IP Addresses of devices in your LAN. This way, Pi-hole displays their names instead of IP Addresses in the web UI.
+
+You can copy the sample file and edit it:
+
+```
+cp hosts{.sample,}
+```
+
+## Running
 
 To start:
 
