@@ -12,8 +12,13 @@ Configuration for my https://pi-hole.net/ instance running in Docker on RPi 3B+.
 ```
 git clone https://github.com/tpwo/pihole-config
 cd pihole-config
+
 cp .env{.sample,}
-# edit .env by providing your specific values
+# edit .env by providing your values for:
+# - ADMIN_PASSWORD -> choose a secure password
+# - IPV4_HOST_ADDRESS -> provide IP address of the host machine
+#                        (usually 192.168.X.X)
+
 just up
 ```
 
