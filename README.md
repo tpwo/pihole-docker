@@ -9,6 +9,8 @@ Configuration for my https://pi-hole.net/ instance running in Docker on RPi 3B+.
 
 ## Running
 
+Initial setup:
+
 ```
 git clone https://github.com/tpwo/pihole-config
 cd pihole-config
@@ -19,6 +21,15 @@ cp .env{.sample,}
 # - IPV4_HOST_ADDRESS -> provide IP address of the host machine
 #                        (usually 192.168.X.X)
 
+# (optional step)
+cp hosts{.sample,}
+# edit hosts file by providing IP Addresses of devices in your network. This
+way, pihole will display their names instead of IP Addresses in the web UI.
+```
+
+To start:
+
+```
 just up
 ```
 

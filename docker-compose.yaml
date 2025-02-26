@@ -16,4 +16,5 @@ services:
     - '/etc/localtime:/etc/localtime:ro'
     - './etc-pihole:/etc/pihole'
     - './etc-dnsmasq.d:/etc/dnsmasq.d'
+    - './hosts:/etc/hosts:ro'
     restart: unless-stopped
