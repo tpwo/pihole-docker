@@ -57,8 +57,8 @@ just updateGravity
 ## Pull newer Pi-hole image
 
 Note that we want to use a specific non-latest image tag to provide stability.
-It's provided in `docker-compose.yaml`.
-You might want to update it first.
+Version is specified in `docker-compose.yaml`.
+After updating version, you can pull the newer image with:
 
 ```
 just update
