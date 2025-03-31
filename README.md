@@ -12,8 +12,8 @@ Configuration for my https://pi-hole.net/ instance running in Docker on RPi 3B+.
 Clone repo and enter the folder:
 
 ```
-git clone https://github.com/tpwo/pihole-config
-cd pihole-config
+git clone https://github.com/tpwo/pihole-docker-config
+cd pihole-docker-config
 ```
 
 Create `.env` file by providing your values for:
