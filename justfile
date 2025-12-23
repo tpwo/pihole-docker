@@ -1,3 +1,7 @@
+# show this help message and exit
+help:
+	just --list
+
 # start service
 up:
 	just _check_dot_env
