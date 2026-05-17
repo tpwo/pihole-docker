@@ -10,7 +10,7 @@ up:
 # pull newest image and start service
 update:
 	just _check_dot_env
-	docker compose up --detach --pull always
+	docker compose up --detach --force-recreate --pull always
 
 # update gravity database
 updateGravity:
